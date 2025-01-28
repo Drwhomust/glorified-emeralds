@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "xyz.drwhomust.emeraldripoff.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

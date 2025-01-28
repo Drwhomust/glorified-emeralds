@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "glorified-emeralds",
+	"version": "${version}",
+	"name": "Glorified Emeralds",
+	"description": "Glorified Emeralds: THE Emerald ripoff no one really needs!",
+	"authors": [
+		"Drwhomust and UnfunnyMii"
+	],
+	"contact": {
+		"homepage": "https://drwhomust.xyz/",
+		"sources": "https://github.com/nightcrawcode/emeraldripoff/"
+	},
+	"license": "MPL-2.0",
+	"icon": "assets/glorified-emeralds/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"xyz.drwhomust.emeraldripoff.GlorifiedEmeralds"
+		],
+		"fabric-datagen": [
+			"xyz.drwhomust.emeraldripoff.GlorifiedEmeraldsDataGenerator"
+		],
+		"client": [
+			"xyz.drwhomust.emeraldripoff.GlorifiedEmeraldsClient"
+		]
+	},
+	"mixins": [
+		"glorified-emeralds.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -16,7 +16,7 @@ import xyz.drwhomust.emeraldripoff.GlorifiedEmeralds;
 
 public class ModBlocks {
         public static final Block ruby_ore = registerBlock("ruby_ore",
-                new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(GlorifiedEmeralds.MOD_ID, "ruby")))
+                new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(GlorifiedEmeralds.MOD_ID, "ruby_ore")))
                         .strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
 
     private static Block registerBlock(String name, Block block) {

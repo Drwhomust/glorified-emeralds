@@ -26,7 +26,7 @@ public class ModBlocks {
 
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(GlorifiedEmeralds.MOD_ID, name),
-                new BlockItem(block, new Item.Settings()));
+                new BlockItem(block, new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GlorifiedEmeralds.MOD_ID, name)))));
     }
 
     public static void registerModBlocks() {

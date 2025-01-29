@@ -8,13 +8,16 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import xyz.drwhomust.emeraldripoff.GlorifiedEmeralds;
 
 public class ModBlocks {
         public static final Block ruby_ore = registerBlock("ruby_ore",
-                new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
+                new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(GlorifiedEmeralds.MOD_ID, "ruby")))
+                        .strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
 
     private static Block registerBlock(String name, Block block) {
       registerBlockItem(name, block);

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:blocks/cube_all",
+  "textures": {
+    "all": "glorified-emeralds:blocks/ruby_ore"
+  }
+}

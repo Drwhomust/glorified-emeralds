@@ -29,5 +29,8 @@ public class ModBlocks {
     public static void registerModBlocks() {
         GlorifiedEmeralds.LOGGER.info("Registering Mod Blocks for " + GlorifiedEmeralds.MOD_ID);
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModBlocks.ruby_ore);
+        });
     }
 }

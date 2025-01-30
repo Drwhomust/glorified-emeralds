@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:blocks/cube_all",
+  "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "glorified-emeralds:block/ruby_ore"
   }
